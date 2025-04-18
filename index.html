@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مدیریت کارهای روزانه</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="welcomeMessage()">
+    <h1>لیست کارهای روزانه من</h1>
+    <form>
+      <input type="text" id="taskInput" placeholder="کار جدید رو بنویس" />
+      <button type="button" onclick="addTask()">اضافه کن</button>
+      <button type="button" onclick="clearTasks()">پاک کردن همه</button>
+      <button type="button" onclick="showTaskCount()">نمایش تعداد کارها</button>
+      <button type="button" onclick="sortTasks()">مرتب‌سازی الفبایی</button>
+    </form>
+    <ul id="taskList"></ul>
+    <div id="taskCount"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
